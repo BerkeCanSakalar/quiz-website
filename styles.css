@@ -1,0 +1,120 @@
+/* Genel Stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-screen{
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Quiz Ekranı */
+#quiz-screen, #result-screen {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Başlıklar */
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+#result-screen {
+    max-height: 90vh;
+    overflow-y: auto; /* Uzun içerikler için kaydırma çubuğu */
+}
+
+/* Sonuç Ekranı Stili */
+#score-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cevap Detayları */
+#answer-details {
+    text-align: left;
+    margin-top: 20px;
+    max-height: 200px; /* İçeriğin fazla genişlememesi için max-height */
+    overflow-y: auto; /* Kaydırma çubuğu ekleyerek taşan içeriği göstermeyi sağla */
+}
+
+#answer-details div {
+    margin-bottom: 15px;
+}
+
+#answer-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+#answer-details hr {
+    border: 1px solid #ddd;
+}
+
+/* Start ve Restart Butonları */
+#start-btn, #restart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#start-btn:hover, #restart-btn:hover {
+    background-color: #45a049;
+}
+
+/* Timer Stili */
+#timer {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Option Buttons */
+.option-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option-btn:hover {
+    background-color: #ddd;
+}
+
